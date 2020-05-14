@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders',
     'core',
     'user',
     'recipe',
@@ -135,3 +136,8 @@ MEDIA_ROOT = '/vol/web/media'
 STATIC_ROOT = '/vol/web/static'
 
 AUTH_USER_MODEL = "core.User"
+
+ CORS_ORIGIN_WHITELIST = [
+    "localhost:3000",
+     "127.0.0.1:3000"
+]
